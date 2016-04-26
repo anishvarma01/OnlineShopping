@@ -1,0 +1,6 @@
+C:\Users\NaveenkumarReddy\documents\visual studio 2013\Projects\OnlineShopping\OnlineShopping\bin\OnlineShopping.dll.config
+C:\Users\NaveenkumarReddy\documents\visual studio 2013\Projects\OnlineShopping\OnlineShopping\bin\OnlineShopping.dll
+C:\Users\NaveenkumarReddy\documents\visual studio 2013\Projects\OnlineShopping\OnlineShopping\bin\OnlineShopping.pdb
+C:\Users\NaveenkumarReddy\documents\visual studio 2013\Projects\OnlineShopping\OnlineShopping\obj\Release\OnlineShopping.dll
+C:\Users\NaveenkumarReddy\documents\visual studio 2013\Projects\OnlineShopping\OnlineShopping\obj\Release\OnlineShopping.pdb
+C:\Users\NaveenkumarReddy\documents\visual studio 2013\Projects\OnlineShopping\OnlineShopping\obj\Release\OnlineShopping.csprojResolveAssemblyReference.cache

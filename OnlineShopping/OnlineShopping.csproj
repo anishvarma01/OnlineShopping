@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{630438D9-C71A-426F-AD0D-C44276636E9B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineShopping</RootNamespace>
+    <AssemblyName>OnlineShopping</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin2.aspx" />
+    <Content Include="Admin\AddEditCategory1.aspx" />
+    <Content Include="Admin\AddNewProduct1.aspx" />
+    <Content Include="Admin\Images\1.jpg" />
+    <Content Include="Admin\Images\2.jpg" />
+    <Content Include="Admin\Images\3.jpg" />
+    <Content Include="Admin\Images\4.jpg" />
+    <Content Include="Admin\Images\Admin.jpg" />
+    <Content Include="Admin\Images\Admin.png" />
+    <Content Include="Admin\Images\CartImage.png" />
+    <Content Include="Admin\Images\CreditImage.gif" />
+    <Content Include="Admin\Images\Heart.jpg" />
+    <Content Include="Admin\Images\keepCalm.png" />
+    <Content Include="Admin\Images\OnlineShopping.jpg" />
+    <Content Include="Admin\Images\ProductImages\ECart.jpg" />
+    <Content Include="Admin\Images\Shpng.gif" />
+    <Content Include="Admin\LoginDynamic.aspx" />
+    <Content Include="Admin\Site1.Master" />
+    <Content Include="BillingInfo.aspx" />
+    <Content Include="MainMaster\SearchMain.aspx" />
+    <Content Include="ShoppingMain\BillingMainInfo.aspx" />
+    <Content Include="ShoppingMain\CheckOutMain.aspx" />
+    <Content Include="MainMaster\CategoryNewMain.aspx" />
+    <Content Include="CheckOut.aspx" />
+    <Content Include="MainMaster\LogInMain.aspx" />
+    <Content Include="MainMaster\MainCategory.aspx" />
+    <Content Include="MainMaster\ProductNewMain.aspx" />
+    <Content Include="ShippingInfo.aspx" />
+    <Content Include="ShoppingMain\ShippingInfoMain.aspx" />
+    <Content Include="ShoppingCart.aspx" />
+    <Content Include="Main.Master" />
+    <Content Include="Shopping.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\LogIn.aspx" />
+    <Content Include="Admin\WebForm1.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ImgesDisplay.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="Main1New.aspx" />
+    <Content Include="Personalnfo.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="ShoppingMain\ShoppingMain.aspx" />
+    <Content Include="Style\Main.css" />
+    <Content Include="ViewCart.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin2.aspx.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin2.aspx.designer.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddEditCategory1.aspx.cs">
+      <DependentUpon>AddEditCategory1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddEditCategory1.aspx.designer.cs">
+      <DependentUpon>AddEditCategory1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddNewProduct1.aspx.cs">
+      <DependentUpon>AddNewProduct1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddNewProduct1.aspx.designer.cs">
+      <DependentUpon>AddNewProduct1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoginDynamic.aspx.cs">
+      <DependentUpon>LoginDynamic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoginDynamic.aspx.designer.cs">
+      <DependentUpon>LoginDynamic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BillingInfo.aspx.cs">
+      <DependentUpon>BillingInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BillingInfo.aspx.designer.cs">
+      <DependentUpon>BillingInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster\SearchMain.aspx.cs">
+      <DependentUpon>SearchMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster\SearchMain.aspx.designer.cs">
+      <DependentUpon>SearchMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingMain\BillingMainInfo.aspx.cs">
+      <DependentUpon>BillingMainInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingMain\BillingMainInfo.aspx.designer.cs">
+      <DependentUpon>BillingMainInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLayer\Cart.cs" />
+    <Compile Include="ShoppingMain\CheckOutMain.aspx.cs">
+      <DependentUpon>CheckOutMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingMain\CheckOutMain.aspx.designer.cs">
+      <DependentUpon>CheckOutMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster\CategoryNewMain.aspx.cs">
+      <DependentUpon>CategoryNewMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster\CategoryNewMain.aspx.designer.cs">
+      <DependentUpon>CategoryNewMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\DataAccess.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImgesDisplay.aspx.cs">
+      <DependentUpon>ImgesDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImgesDisplay.aspx.designer.cs">
+      <DependentUpon>ImgesDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster\LogInMain.aspx.cs">
+      <DependentUpon>LogInMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster\LogInMain.aspx.designer.cs">
+      <DependentUpon>LogInMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Main1New.aspx.cs">
+      <DependentUpon>Main1New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main1New.aspx.designer.cs">
+      <DependentUpon>Main1New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster\MainCategory.aspx.cs">
+      <DependentUpon>MainCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster\MainCategory.aspx.designer.cs">
+      <DependentUpon>MainCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personalnfo.aspx.cs">
+      <DependentUpon>Personalnfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personalnfo.aspx.designer.cs">
+      <DependentUpon>Personalnfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster\ProductNewMain.aspx.cs">
+      <DependentUpon>ProductNewMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster\ProductNewMain.aspx.designer.cs">
+      <DependentUpon>ProductNewMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CheckOut.aspx.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckOut.aspx.designer.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInfo.aspx.cs">
+      <DependentUpon>ShippingInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippingInfo.aspx.designer.cs">
+      <DependentUpon>ShippingInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingMain\ShippingInfoMain.aspx.cs">
+      <DependentUpon>ShippingInfoMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingMain\ShippingInfoMain.aspx.designer.cs">
+      <DependentUpon>ShippingInfoMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping.Master.cs">
+      <DependentUpon>Shopping.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shopping.Master.designer.cs">
+      <DependentUpon>Shopping.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingMain\ShoppingMain.aspx.cs">
+      <DependentUpon>ShoppingMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingMain\ShoppingMain.aspx.designer.cs">
+      <DependentUpon>ShoppingMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCart.aspx.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCart.aspx.designer.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProductImages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63693</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63693/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="OnlineShopping.Main1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder>
+
+
+    </title>
+    <link href="Style/Main.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="Wrapper">
+            <div class="Menu">
+                <ul>
+                    <li><a href="LogInMain.aspx">LogIn</a> </li>
+                    <li><a href="CategoryNewMain.aspx">Category</a> </li>
+                    <li><a href="ProductNewMain.aspx">Products</a> </li>
+                    <li><a href="SearchMain.aspx">Search</a> </li>
+                </ul>
+
+            </div>
+            <div class="Clear"></div>
+    <div class="Content">
+        <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            <div class="Clear"></div>
+                <div class="Footer">
+                    <h2>
+                        EasyOnLine.com
+                    </h2>
+                </div>
+            </div>
+    </form>
+</body>
+</html>
